@@ -323,10 +323,7 @@ function kittyBotGo() {
         gamePage.craft('slab',Math.round(0.5+kb_rMinerals.perTickCached*5/175));
     }
 
-    // Craft Iron to Plates
-    if (kb_use('iron') && ((kb_rIron.maxValue - (kb_rIron.perTickCached*6)) <= kb_rIron.value) && (0 < kb_rIron.perTickCached)) {
-        gamePage.craft('plate',Math.round(0.5+kb_rIron.perTickCached*5/125));
-    }
+
 
     // Craft Oil to Kerosene
     if (kb_use('oil') && ((kb_rOil.maxValue - (kb_rOil.perTickCached*6)) <= kb_rOil.value) && (0 < kb_rOil.perTickCached)) {
